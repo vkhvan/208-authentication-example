@@ -31,7 +31,7 @@ app.layout = html.Div([
 
     html.Div(id='graph-title'),
     dcc.Graph(id='graph'),
-    html.A('Code on Github', href='https://github.com/austinlasseter/dash-auth-example'),
+    html.A('Code on Github', href='https://github.com/vkhvan/208-authentication-example'),
     html.Br(),
     html.A("Data Source", href='https://dash.plotly.com/authentication'),
 ], className='container')
@@ -43,7 +43,7 @@ app.layout = html.Div([
     )
 def update_graph(dropdown_value):
 
-    x_values = [-3,-2,-1,0,1,2,3]
+    x_values = [-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6]
     y_values = [x**dropdown_value for x in x_values]
     colors=['black','red','green','blue','orange','purple']
     graph_title='Graph of {}'.format(str(dropdown_value))
